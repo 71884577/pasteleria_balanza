@@ -47,10 +47,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 
-/**
- *
- * @author Roycer
- */
+
 public class JFrameBalance extends javax.swing.JFrame {
 
     String service_recetas = "/receta";
@@ -242,6 +239,9 @@ public class JFrameBalance extends javax.swing.JFrame {
         
         if(lect_balance_array.length == 3){    
             lect_balance = Double.parseDouble(lect_balance_array[1]);
+        }
+        else if(lect_balance_array.length == 1){
+            lect_balance = Double.parseDouble(lect_balance_array[0]);
         }
         try {
             String insumo = jComboBox_Insumo.getSelectedItem().toString();
